@@ -14,6 +14,14 @@
 		8F2C0B951BA1EF4C00E89742 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C0B941BA1EF4C00E89742 /* Images.xcassets */; };
 		8F2C0B981BA1EF4C00E89742 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C0B961BA1EF4C00E89742 /* LaunchScreen.xib */; };
 		8F2C0BA41BA1EF4C00E89742 /* DrawingLabelExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BA31BA1EF4C00E89742 /* DrawingLabelExamplesTests.m */; };
+		8F2C0BBE1BA1F7BF00E89742 /* Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BAF1BA1F7BF00E89742 /* Drawing.m */; };
+		8F2C0BC01BA1F7BF00E89742 /* DrawingGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BB31BA1F7BF00E89742 /* DrawingGradient.m */; };
+		8F2C0BC11BA1F7BF00E89742 /* DrawingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BB51BA1F7BF00E89742 /* DrawingLabel.m */; };
+		8F2C0BC21BA1F7BF00E89742 /* DrawingShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BB71BA1F7BF00E89742 /* DrawingShadow.m */; };
+		8F2C0BC31BA1F7BF00E89742 /* DrawingStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BB91BA1F7BF00E89742 /* DrawingStroke.m */; };
+		8F2C0BC71BA1F7D900E89742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2C0BC61BA1F7D900E89742 /* CoreGraphics.framework */; };
+		8F2C0BC91BA1F8F200E89742 /* ComicSCFTurkish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C0BC81BA1F8F200E89742 /* ComicSCFTurkish.ttf */; };
+		8F2C0BCC1BA1FA0200E89742 /* DrawingCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,20 @@
 		8F2C0B9D1BA1EF4C00E89742 /* DrawingLabelExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingLabelExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2C0BA21BA1EF4C00E89742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2C0BA31BA1EF4C00E89742 /* DrawingLabelExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingLabelExamplesTests.m; sourceTree = "<group>"; };
+		8F2C0BAE1BA1F7BF00E89742 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		8F2C0BAF1BA1F7BF00E89742 /* Drawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drawing.m; sourceTree = "<group>"; };
+		8F2C0BB21BA1F7BF00E89742 /* DrawingGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingGradient.h; sourceTree = "<group>"; };
+		8F2C0BB31BA1F7BF00E89742 /* DrawingGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingGradient.m; sourceTree = "<group>"; };
+		8F2C0BB41BA1F7BF00E89742 /* DrawingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingLabel.h; sourceTree = "<group>"; };
+		8F2C0BB51BA1F7BF00E89742 /* DrawingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingLabel.m; sourceTree = "<group>"; };
+		8F2C0BB61BA1F7BF00E89742 /* DrawingShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingShadow.h; sourceTree = "<group>"; };
+		8F2C0BB71BA1F7BF00E89742 /* DrawingShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingShadow.m; sourceTree = "<group>"; };
+		8F2C0BB81BA1F7BF00E89742 /* DrawingStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingStroke.h; sourceTree = "<group>"; };
+		8F2C0BB91BA1F7BF00E89742 /* DrawingStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingStroke.m; sourceTree = "<group>"; };
+		8F2C0BC61BA1F7D900E89742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F2C0BC81BA1F8F200E89742 /* ComicSCFTurkish.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSCFTurkish.ttf; sourceTree = "<group>"; };
+		8F2C0BCA1BA1FA0200E89742 /* DrawingCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingCollection.h; sourceTree = "<group>"; };
+		8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2C0BC71BA1F7D900E89742 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 		8F2C0B7B1BA1EF4C00E89742 = {
 			isa = PBXGroup;
 			children = (
+				8F2C0BC61BA1F7D900E89742 /* CoreGraphics.framework */,
 				8F2C0B861BA1EF4C00E89742 /* DrawingLabelExamples */,
 				8F2C0BA01BA1EF4C00E89742 /* DrawingLabelExamplesTests */,
 				8F2C0B851BA1EF4C00E89742 /* Products */,
@@ -81,6 +105,7 @@
 		8F2C0B861BA1EF4C00E89742 /* DrawingLabelExamples */ = {
 			isa = PBXGroup;
 			children = (
+				8F2C0BAD1BA1F79F00E89742 /* Classes */,
 				8F2C0B8B1BA1EF4C00E89742 /* AppDelegate.h */,
 				8F2C0B8C1BA1EF4C00E89742 /* AppDelegate.m */,
 				8F2C0B8E1BA1EF4C00E89742 /* ViewController.h */,
@@ -88,6 +113,7 @@
 				8F2C0B911BA1EF4C00E89742 /* Main.storyboard */,
 				8F2C0B941BA1EF4C00E89742 /* Images.xcassets */,
 				8F2C0B961BA1EF4C00E89742 /* LaunchScreen.xib */,
+				8F2C0BC81BA1F8F200E89742 /* ComicSCFTurkish.ttf */,
 				8F2C0B871BA1EF4C00E89742 /* Supporting Files */,
 			);
 			path = DrawingLabelExamples;
@@ -117,6 +143,25 @@
 				8F2C0BA21BA1EF4C00E89742 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F2C0BAD1BA1F79F00E89742 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F2C0BAE1BA1F7BF00E89742 /* Drawing.h */,
+				8F2C0BAF1BA1F7BF00E89742 /* Drawing.m */,
+				8F2C0BB21BA1F7BF00E89742 /* DrawingGradient.h */,
+				8F2C0BB31BA1F7BF00E89742 /* DrawingGradient.m */,
+				8F2C0BB41BA1F7BF00E89742 /* DrawingLabel.h */,
+				8F2C0BB51BA1F7BF00E89742 /* DrawingLabel.m */,
+				8F2C0BB61BA1F7BF00E89742 /* DrawingShadow.h */,
+				8F2C0BB71BA1F7BF00E89742 /* DrawingShadow.m */,
+				8F2C0BB81BA1F7BF00E89742 /* DrawingStroke.h */,
+				8F2C0BB91BA1F7BF00E89742 /* DrawingStroke.m */,
+				8F2C0BCA1BA1FA0200E89742 /* DrawingCollection.h */,
+				8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2C0BC91BA1F8F200E89742 /* ComicSCFTurkish.ttf in Resources */,
 				8F2C0B931BA1EF4C00E89742 /* Main.storyboard in Resources */,
 				8F2C0B981BA1EF4C00E89742 /* LaunchScreen.xib in Resources */,
 				8F2C0B951BA1EF4C00E89742 /* Images.xcassets in Resources */,
@@ -219,9 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2C0BBE1BA1F7BF00E89742 /* Drawing.m in Sources */,
+				8F2C0BC01BA1F7BF00E89742 /* DrawingGradient.m in Sources */,
 				8F2C0B901BA1EF4C00E89742 /* ViewController.m in Sources */,
+				8F2C0BC21BA1F7BF00E89742 /* DrawingShadow.m in Sources */,
 				8F2C0B8D1BA1EF4C00E89742 /* AppDelegate.m in Sources */,
+				8F2C0BCC1BA1FA0200E89742 /* DrawingCollection.m in Sources */,
+				8F2C0BC31BA1F7BF00E89742 /* DrawingStroke.m in Sources */,
 				8F2C0B8A1BA1EF4C00E89742 /* main.m in Sources */,
+				8F2C0BC11BA1F7BF00E89742 /* DrawingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +470,7 @@
 				8F2C0BA91BA1EF4C00E89742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F2C0BAA1BA1EF4C00E89742 /* Build configuration list for PBXNativeTarget "DrawingLabelExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +479,7 @@
 				8F2C0BAC1BA1EF4C00E89742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
