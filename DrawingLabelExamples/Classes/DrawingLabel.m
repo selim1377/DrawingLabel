@@ -12,6 +12,7 @@
 
 -(void)drawTextInRect:(CGRect)rect
 {
+    [super drawTextInRect:rect];
     [self drawLabelStyleOnRect:rect];
 }
 
@@ -19,8 +20,7 @@
 {    
     if (self.drawing)
         [self.drawing drawTextInRect:rect forLabel:self];
-    else
-        [self shouldDrawRect:rect];
+
 }
 
 -(void)shouldDrawRect:(CGRect)rect
