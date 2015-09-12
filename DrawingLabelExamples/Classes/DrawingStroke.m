@@ -64,4 +64,16 @@
     label.textColor = originalColor;
 }
 
+
+-(id)copyWithZone:(NSZone *)zone
+{
+    DrawingStroke *drawing = [super copyWithZone:zone];
+    if (drawing)
+    {
+        drawing.strokeColor = self.strokeColor;
+        drawing.strokeWidth = self.strokeWidth;
+    }
+    return drawing;
+}
+
 @end

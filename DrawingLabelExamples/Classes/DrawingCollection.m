@@ -25,27 +25,29 @@
 
 -(void)applyDrawingsToLabel:(DrawingLabel *)drawingLabel
 {
-    for (Drawing *drawing in self.drawings) {
+    NSMutableArray *copyDrawing = [[NSMutableArray alloc] initWithArray:self.drawings copyItems:YES];
+    
+    for (Drawing *drawing in copyDrawing) {
         
         if ([drawing isKindOfClass:[Drawing class]]) {
             drawing.delegate = drawingLabel;
         }
     }
     
-    for (NSInteger index = self.drawings.count - 1; index >= 0; index--) {
+    for (NSInteger index = copyDrawing.count - 1; index >= 0; index--) {
         
-        Drawing *drawing = [self.drawings objectAtIndex:index];
+        Drawing *drawing = [copyDrawing objectAtIndex:index];
         if ([drawing isKindOfClass:[Drawing class]]) {
             
             if(index > 0)
             {
-                Drawing *childDrawing = [self.drawings objectAtIndex:index-1];
+                Drawing *childDrawing = [copyDrawing objectAtIndex:index-1];
                 drawing.childDrawing = childDrawing;
             }
         }
     }
     
-    Drawing *mostParent = self.drawings.lastObject;
+    Drawing *mostParent = copyDrawing.lastObject;
     drawingLabel.drawing = mostParent;
     
 }

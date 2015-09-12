@@ -52,4 +52,17 @@
     CGContextRestoreGState(context);
 }
 
+-(id)copyWithZone:(NSZone *)zone
+{
+    DrawingShadow *drawing = [super copyWithZone:zone];
+    if (drawing)
+    {
+        drawing.shadowBlur  = self.shadowBlur;
+        drawing.shadowColor = self.shadowColor;
+        drawing.shadowSize  = self.shadowSize;
+    }
+    return drawing;
+}
+
+
 @end

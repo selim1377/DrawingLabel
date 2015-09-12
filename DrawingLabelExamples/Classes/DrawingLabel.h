@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Drawing.h"
 
+/*!
+ An examples UILabel subclass, which uses the drawing library
+ */
 @interface DrawingLabel : UILabel <DrawingDelegate>
 
 @property (nonatomic,strong) Drawing *drawing;

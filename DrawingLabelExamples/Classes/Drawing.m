@@ -21,5 +21,18 @@
         [self.delegate shouldDrawRect:rect];
 }
 
+- (id)copyWithZone:(NSZone *)zone
+{
+    id copy = [[[self class] alloc] init];
+    Drawing *drawing =  (Drawing *)copy;
+    
+    if (drawing)
+    {
+        drawing.childDrawing = self.childDrawing;
+        drawing.delegate     = self.delegate;
+    }
+    
+    return drawing;
+}
 
 @end

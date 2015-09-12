@@ -124,5 +124,17 @@
     }
 }
 
+-(id)copyWithZone:(NSZone *)zone
+{
+    DrawingGradient *drawing = [super copyWithZone:zone];
+    if (drawing)
+    {
+        drawing.colorArray = self.colorArray;
+        drawing.locations  = self.locations;
+        drawing.gradientType = self.gradientType;
+    }
+    return drawing;
+}
+
 
 @end

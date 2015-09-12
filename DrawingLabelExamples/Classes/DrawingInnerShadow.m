@@ -83,4 +83,16 @@
 }
 
 
+-(id)copyWithZone:(NSZone *)zone
+{
+    DrawingInnerShadow *drawing = [super copyWithZone:zone];
+    if (drawing)
+    {
+        drawing.innerShadowBlur     = self.innerShadowBlur;
+        drawing.innerShadowColor    = self.innerShadowColor;
+        drawing.innerShadowOffset   = self.innerShadowOffset;
+    }
+    return drawing;
+}
+
 @end
