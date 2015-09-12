@@ -31,7 +31,7 @@
     
     self.styleLabel = [[DrawingLabel alloc] initWithFrame:CGRectMake(0, 50.0, bounds.size.width,50.0)];;
     self.styleLabel.textAlignment = NSTextAlignmentCenter;
-    self.styleLabel.text  = @"Colorful-Label";
+    self.styleLabel.text  = @"Drawing-Label";
     self.styleLabel.adjustsFontSizeToFitWidth = YES;
     self.styleLabel.font = [UIFont fontWithName:@"ComicSCFTurkish" size:35.0];
     self.styleLabel.textColor = [UIColor yellowColor];
