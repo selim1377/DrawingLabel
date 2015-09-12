@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         =  'SDrawingLabel'
+  s.name         =  'DrawingLabel'
   s.version      =  '1.0'
   s.license      =  {:type => 'zlib'}
   s.summary      =  'A collection of objects, which creates different UILabel styles such as multiple strokes, shadows, inner shadow and gradients'
@@ -9,5 +9,6 @@ Pod::Spec.new do |s|
   s.platform     =  :ios
   s.source_files =  'DrawingLabelExamples/Classes/*.{h,m}'
   s.requires_arc =  true
+  s.framework    = 'CoreGraphics'
   s.platform     = :ios, '6.0'
 end
