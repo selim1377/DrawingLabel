@@ -22,6 +22,7 @@
 		8F2C0BC71BA1F7D900E89742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2C0BC61BA1F7D900E89742 /* CoreGraphics.framework */; };
 		8F2C0BC91BA1F8F200E89742 /* ComicSCFTurkish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C0BC81BA1F8F200E89742 /* ComicSCFTurkish.ttf */; };
 		8F2C0BCC1BA1FA0200E89742 /* DrawingCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */; };
+		8F6B49841BA385C6000AC29D /* DrawingInnerShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B49831BA385C6000AC29D /* DrawingInnerShadow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		8F2C0BC81BA1F8F200E89742 /* ComicSCFTurkish.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSCFTurkish.ttf; sourceTree = "<group>"; };
 		8F2C0BCA1BA1FA0200E89742 /* DrawingCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingCollection.h; sourceTree = "<group>"; };
 		8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingCollection.m; sourceTree = "<group>"; };
+		8F6B49821BA385C6000AC29D /* DrawingInnerShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingInnerShadow.h; sourceTree = "<group>"; };
+		8F6B49831BA385C6000AC29D /* DrawingInnerShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingInnerShadow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				8F2C0BB71BA1F7BF00E89742 /* DrawingShadow.m */,
 				8F2C0BB81BA1F7BF00E89742 /* DrawingStroke.h */,
 				8F2C0BB91BA1F7BF00E89742 /* DrawingStroke.m */,
+				8F6B49821BA385C6000AC29D /* DrawingInnerShadow.h */,
+				8F6B49831BA385C6000AC29D /* DrawingInnerShadow.m */,
 				8F2C0BCA1BA1FA0200E89742 /* DrawingCollection.h */,
 				8F2C0BCB1BA1FA0200E89742 /* DrawingCollection.m */,
 			);
@@ -270,6 +275,7 @@
 				8F2C0B901BA1EF4C00E89742 /* ViewController.m in Sources */,
 				8F2C0BC21BA1F7BF00E89742 /* DrawingShadow.m in Sources */,
 				8F2C0B8D1BA1EF4C00E89742 /* AppDelegate.m in Sources */,
+				8F6B49841BA385C6000AC29D /* DrawingInnerShadow.m in Sources */,
 				8F2C0BCC1BA1FA0200E89742 /* DrawingCollection.m in Sources */,
 				8F2C0BC31BA1F7BF00E89742 /* DrawingStroke.m in Sources */,
 				8F2C0B8A1BA1EF4C00E89742 /* main.m in Sources */,

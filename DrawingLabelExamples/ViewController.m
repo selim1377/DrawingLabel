@@ -12,6 +12,7 @@
 #import "DrawingCollection.h"
 #import "DrawingShadow.h"
 #import "DrawingGradient.h"
+#import "DrawingInnerShadow.h"
 
 @interface ViewController ()
 
@@ -51,10 +52,11 @@
     self.collection = [DrawingCollection new];
 
     [self.collection addDrawing:[self generateGradientStyle1]];
-    [self.collection addDrawing:[self generateStroke2]];
-    [self.collection addDrawing:[self generateStroke]];
-    [self.collection addDrawing:[self generateShadow1]];
-    [self.collection addDrawing:[self generateShadow2]];
+    [self.collection addDrawing:[self generateInnerShadow]];
+    [self.collection addDrawing:[self generateBlackStroke]];
+    [self.collection addDrawing:[self generateGreenStroke]];
+    [self.collection addDrawing:[self generateBlueShadow]];
+    [self.collection addDrawing:[self generateRedShadow]];
     
     [self.collection applyDrawingsToLabel:label];
 
@@ -73,25 +75,35 @@
     return gradient;
 }
 
--(Drawing *)generateStroke
+-(Drawing *)generateInnerShadow
+{
+    DrawingInnerShadow *innerShadow = [DrawingInnerShadow new];
+    innerShadow.innerShadowOffset = CGSizeMake(1.0, 1.0);
+    innerShadow.innerShadowColor  = [UIColor redColor];
+    innerShadow.innerShadowBlur   = 2.0f;
+
+    return innerShadow;
+}
+
+-(Drawing *)generateBlackStroke
 {
     DrawingStroke      *blackStroke      = [DrawingStroke new];
-    blackStroke.strokeWidth  = 2.0;
+    blackStroke.strokeWidth  = 3.0;
     blackStroke.strokeColor  = [UIColor blackColor];
     
     return blackStroke;
 }
 
--(Drawing *)generateStroke2
+-(Drawing *)generateGreenStroke
 {
     DrawingStroke      *stroke      = [DrawingStroke new];
-    stroke.strokeWidth  = 1.0;
+    stroke.strokeWidth  = 5.0;
     stroke.strokeColor  = [UIColor greenColor];
     
     return stroke;
 }
 
--(Drawing *)generateShadow1
+-(Drawing *)generateBlueShadow
 {
     UIColor *dropShadowColor = [UIColor colorWithRed:7.0/255.0
                                                green:104.0/255.0
@@ -100,38 +112,19 @@
     
     
     DrawingShadow *softShadow = [DrawingShadow new];
-    softShadow.shadowSize = CGSizeMake(1.0f, 1.0f);
+    softShadow.shadowSize = CGSizeMake(4.0f, 4.0f);
     softShadow.shadowColor = dropShadowColor;
+    softShadow.shadowBlur  = 2.0f;
     
     return softShadow;
 }
 
--(Drawing *)generateShadow2
+-(Drawing *)generateRedShadow
 {
     DrawingShadow *softShadow = [DrawingShadow new];
     softShadow.shadowSize = CGSizeMake(-2.0f, -2.0f);
     softShadow.shadowColor = [UIColor redColor];
     
     return softShadow;
-}
-
-- (IBAction)styleButtonTapped:(id)sender
-{
-    UIButton *styleButton = sender;
-    
-    BOOL selected = styleButton.selected;
-    styleButton.selected = !selected;
-    
-    if (styleButton.tag == 0)
-    {
-        // Stroke
-        if (styleButton.selected)
-            [self appleStyle:self.styleLabel];
-        
-        else
-            self.styleLabel.drawing = nil;
-        
-        [self.styleLabel setNeedsDisplay];
-    }
 }
 @end
