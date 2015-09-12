@@ -18,7 +18,6 @@ typedef enum : NSUInteger {
 
 @property (nonatomic,strong)  NSArray *colorArray;
 @property (nonatomic)         NSArray *locations;
-
-@property (nonatomic,assign) DrawingGradientType gradientType;
+@property (nonatomic,assign)  DrawingGradientType gradientType;
 
 @end
