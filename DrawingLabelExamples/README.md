@@ -2,8 +2,6 @@
 
 DrawingLabel library consists of objects, which creates different UILabel styles such as multiple strokes, shadows, inner shadow and gradients. 
 
-![Screenshot](/DrawingLabelExamples/sample.png?raw=true)
-
 ## Requirements
   - iOS 6.0 or higher
   - Requires ARC
